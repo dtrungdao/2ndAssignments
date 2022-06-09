@@ -1,0 +1,45 @@
+body { margin:0; 
+    font-family:'Roboto', Arial, sans-serif; 
+    font-size:13px; 
+    color:#333;
+ }
+
+a {color:#444; text-decoration:none; }
+a:hover { color:#ff6600;}
+img {
+ max-width:100%;
+ border:0;
+ }	
+* {
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+}
+
+.menu{
+    text-align: center;
+    margin: 20px;
+}
+
+.selection{
+    text-align: center;
+}
+
+.main {
+	margin:auto;
+	max-width:980px;
+	width:100%;
+    background-color: gainsboro;
+}
+
+table {
+    border: 1px solid black;
+}
+
+tbody tr {
+    background-color: lightgray;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: darkgrey;
+}

@@ -1,0 +1,97 @@
+body { margin:0; 
+    font-family:'Roboto', Arial, sans-serif; 
+    font-size:13px; 
+    color:#333;
+ }
+
+a {color:#444; text-decoration:none; }
+a:hover { color:#ff6600;}
+img {
+ max-width:100%;
+ border:0;
+ }	
+* {
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+}
+
+
+
+
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+}
+
+.header .school-name{
+    float: left;
+    padding: 0px 15px;
+}
+
+.navi{
+    width: 100%;
+    float: left;
+    background-color: white;
+}
+
+.menu{
+    width: 100%;
+    height: 50px;
+    margin: 0;
+}
+
+.header .menu li{
+	float: left;
+	padding:0px 15px;
+	line-height: 50px;
+	list-style:none;
+	font-size:15px;
+	position:relative;
+}
+
+.content{
+    float: left;
+    width: 100%;
+}
+
+.manage{
+    padding: 20px;
+}
+
+.row{
+	margin-left: -10px;
+	margin-right: -10px;
+	}
+
+.col{
+	width: 50%;
+	padding: 50px;
+    float: left;
+	}
+
+.box-manage{
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding:50px;
+    margin: 50px;
+    }
+
+button{
+    width: 90%;
+	height: 150px;
+	background-color: aqua;
+	border-radius: 5px;
+    margin: 25px;
+}
+
+.main {
+	margin:auto;
+	max-width:980px;
+	width:100%;
+    background-color: white;
+}
+

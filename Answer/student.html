@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <!--style-->
+    <link href="css/student.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="main">
+        <div class="menu">
+            <button onclick="studentOptionsClick('add')">Add Student</button>
+            <button>Update Student</button>
+            <button>Delete Student</button>
+        </div>
+        <div class="selection">
+            Department selection
+            <select id="department-top" onclick="filterDepartment()">
+            <option value="select">Select</option>
+            <option value="it">Information Technology</option>
+            <option value="mathe">Mathematic</option>
+            </select>
+            <br>
+            Semester selection
+            <select id="semester">
+            <option value="select">Select</option>
+            <option value="summer">Summer</option>
+            <option value="fall">Fall</option>
+            <option value="winter">Winter</option>
+            </select>
+        </div>
+            <form id="add-student" onsubmit="return false">
+                StudentID <input type="text" id="studentid" name="StudentID">
+                First Name <input type="text" id="firstname" name="FirstName">
+                Last Name <input type="text" id="lastname" name="LastName"><br>
+                Date Of Birth<input type="date" id="dob" name="DOB" onclick="disableDay()"><br>
+                Gender <input type="radio" id="sex" name="Gender" value="male"> Male
+                <input type="radio" id="sex" name="Gender" value="female"> Female
+                <input type="radio" id="sex" name="Gender" value="other"> Other <br>
+                Department
+                <select id="department" name="Department">
+                    <option value="Select">Select</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Mathematic">Mathematic</option>
+                </select>
+                Email <input type="text" id="email" name="Email" >
+                Joining Date<input type="date" id="joiningDate" name="JoiningDate" onclick="disableDay()"><br>
+
+                <input type="submit" id="addStudent" name="addStudent" value="Add" onclick="submitAdd()">
+                <button>Cancel</button>
+            </form>
+        <div>
+            <table id="student-table">
+                <thead>
+                <tr>
+                    <th>StudentID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>DOB</th>
+                    <th>Gender</th>
+                    <th>Department</th>
+                    <th>Email</th>
+                    <th>Joining Date</th>
+
+                </tr>
+                </thead>
+                <tbody id="student-table-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/student.js"></script>
+
+</body>
+</html>
